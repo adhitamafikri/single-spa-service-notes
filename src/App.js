@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import routeStack from './routes'
+import { NotesProvider } from './contexts/NotesContext'
 
 function RenderRouteStack() {
   return routeStack.map((route, idx) => {
@@ -17,9 +18,11 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <React.Suspense fallback={<div>Loading...</div>}>
-          <RenderRouteStack />
-        </React.Suspense>
+        <NotesProvider>
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <RenderRouteStack />
+          </React.Suspense>
+        </NotesProvider>
       </Switch>
     </BrowserRouter>
   )

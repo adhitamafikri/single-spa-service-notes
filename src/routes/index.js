@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 
-const ListPage = lazy(() => import( /* webpackChunkName: 'ListPage' */ '../components/List'))
-const CreatePage = lazy(() => import( /* webpackChunkName: 'CreatePage' */ '../components/Create'))
+const ListPage = lazy(() => import( /* webpackChunkName: 'ListPage' */ '../pages/List'))
+const CreatePage = lazy(() => import( /* webpackChunkName: 'CreatePage' */ '../pages/Create'))
 
 export default [
   {

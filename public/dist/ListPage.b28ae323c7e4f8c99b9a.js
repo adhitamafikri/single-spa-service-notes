@@ -1,0 +1,39 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["ListPage"],{
+
+/***/ "./src/components/Pane/index.js":
+/*!**************************************!*\
+  !*** ./src/components/Pane/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  width: \", \";\\n  height: \", \";\\n  display: \", \";\\n  justify-content: \", \";\\n  align-items: \", \";\\n  flex-wrap: \", \";\\n  margin: \", \";\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n\n\nvar StyledPane = styled_components__WEBPACK_IMPORTED_MODULE_1__[\"default\"].div(_templateObject(), function (props) {\n  return props.width;\n}, function (props) {\n  return props.height;\n}, function (props) {\n  return props.display;\n}, function (props) {\n  return props.justifyContent;\n}, function (props) {\n  return props.alignItems;\n}, function (props) {\n  return props.flexWrap;\n}, function (props) {\n  return props.margin;\n});\n\nfunction Pane(_ref) {\n  var width = _ref.width,\n      height = _ref.height,\n      display = _ref.display,\n      justifyContent = _ref.justifyContent,\n      alignItems = _ref.alignItems,\n      flexWrap = _ref.flexWrap,\n      margin = _ref.margin,\n      children = _ref.children;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPane, {\n    width: width,\n    height: height,\n    display: display,\n    justifyContent: justifyContent,\n    alignItems: alignItems,\n    flexWrap: flexWrap,\n    margin: margin\n  }, children);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Pane);\n\n//# sourceURL=webpack:///./src/components/Pane/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Paper/index.js":
+/*!***************************************!*\
+  !*** ./src/components/Paper/index.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  width: 140px;\\n  height: 200px\\n  border-radius: 6px;\\n  padding: 8px;\\n  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);\\n  margin: \", \";\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n\n\nvar StyledPaper = styled_components__WEBPACK_IMPORTED_MODULE_1__[\"default\"].div(_templateObject(), function (props) {\n  return props.margin;\n});\n\nfunction Paper(_ref) {\n  var margin = _ref.margin,\n      children = _ref.children;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPaper, {\n    margin: margin\n  }, children);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Paper);\n\n//# sourceURL=webpack:///./src/components/Paper/index.js?");
+
+/***/ }),
+
+/***/ "./src/pages/List/index.js":
+/*!*********************************!*\
+  !*** ./src/pages/List/index.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var _components_Paper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Paper */ \"./src/components/Paper/index.js\");\n/* harmony import */ var _components_Pane__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Pane */ \"./src/components/Pane/index.js\");\n/* harmony import */ var _contexts_NotesContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../contexts/NotesContext */ \"./src/contexts/NotesContext/index.js\");\n\n\n\n\n\n\nfunction NoteList(_ref) {\n  var notes = _ref.notes;\n  return notes.map(function (note, idx) {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Paper__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n      key: idx,\n      margin: \"0 8px\"\n    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"strong\", null, note.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, note.content));\n  });\n}\n\nfunction List() {\n  var _useNotesState = Object(_contexts_NotesContext__WEBPACK_IMPORTED_MODULE_4__[\"useNotesState\"])(),\n      loading = _useNotesState.loading,\n      error = _useNotesState.error,\n      errorMsg = _useNotesState.errorMsg,\n      items = _useNotesState.items;\n\n  var notesDispatch = Object(_contexts_NotesContext__WEBPACK_IMPORTED_MODULE_4__[\"useNotesDispatch\"])();\n  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {\n    Object(_contexts_NotesContext__WEBPACK_IMPORTED_MODULE_4__[\"fetchNotes\"])(notesDispatch);\n  }, [_contexts_NotesContext__WEBPACK_IMPORTED_MODULE_4__[\"fetchNotes\"]]);\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"The List of Notes\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Pane__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n    width: \"flex\",\n    display: \"flex\",\n    justifyContent: \"center\",\n    alignItems: \"center\",\n    flexWrap: \"wrap\",\n    margin: \"16px 0\"\n  }, loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"Fetching....\"), !loading && items && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NoteList, {\n    notes: items\n  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    to: \"/create\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", null, \"Create Notes\")));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (List);\n\n//# sourceURL=webpack:///./src/pages/List/index.js?");
+
+/***/ })
+
+}]);
