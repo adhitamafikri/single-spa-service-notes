@@ -48,6 +48,7 @@ export function useNotesDispatch() {
  * @desc Fetching notes from api
  */
 export async function fetchNotes(dispatch) {
+  console.log('fetching notes')
   dispatch({ type: FETCH_NOTES_BEGIN })
   try {
     const URL = `${API_URL}/notes`
